@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&family=Quicksand&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="images/pribor.png" width="16px" height="16px" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <title>Restoran FIDIT</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top pt-2 pb-2 shadow-sm">
+    <div class="container">
+      <a class="navbar-brand px-3" href="#"><img src="images/logo.svg" alt="FIDIT Logo" width="150px" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <li class="nav-item px-3">
+            <a class="nav-link" href="index.html">Početna</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link" href="index.html#o-nama">O nama</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link" href="index.html#ponuda">Ponuda</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link" href="ambijent.html">Ambijent</a>
+          </li>
+        </div>
+        <div class="navbar-nav ms-auto">
+          <li class="nav-item px-3">
+            <a class="nav-link" href="index.html#kontakt">Kontakt</a>
+          </li>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ------ HERO SECTION - CAROUSEL ------ -->
+
+  <div id="myCarousel" class="carousel slide mb-6 h-100" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner h-100">
+      <div class="carousel-item h-100 active">
+        <img class="w-100 h-100 object-fit-cover" src="images/carousel-3.jpg" alt="" />
+        <div class="container h-100">
+          <div class="carousel-caption first d-flex align-items-center h-100 text-start">
+            <div class="d-flex flex-column">
+              <h1 class="text-center text-md-start pb-3 display-2 lh-1">
+                Okusite savršenstvo svakog zalogaja
+              </h1>
+              <p class="d-none d-md-block fs-5">
+                Doživite savršen spoj gastronomske stručnosti i srdačne
+                atmosfere, jer Vaše zadovoljstvo je naša najvažnija
+                poslastica.
+              </p>
+              <div class="d-md-flex hero-cta d-none gap-4 mt-2">
+                <a class="btn btn-lg btn-primary px-5 rounded-0 border-0" href="index.html#o-nama">O nama</a>
+                <a class="btn btn-lg btn-secondary px-5 rounded-0" href="index.html#ponuda">Ponuda</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item h-100">
+        <img class="w-100 h-100 object-fit-cover" src="images/background-hero.jpg" alt="" />
+        <div class="container h-100">
+          <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+            <div class="d-flex flex-column">
+              <h1 class="pb-3 display-3 lh-2 text-center">
+                Otkrijte najbolja vina iz našeg podruma
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item h-100">
+        <img class="w-100 h-100 object-fit-cover" src="images/carousel-2.jpg" alt="" />
+        <div class="container h-100">
+          <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+            <div class="d-flex flex-column">
+              <h1 class="pb-3 display-3 lh-2 text-center">
+                Najbolja pizza u gradu, bez konkurencije u okusu i kvaliteti
+                sastojaka!
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Prethodni</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Sljedeći</span>
+    </button>
+  </div>
+
+  <!-- ------ BOOTSTRAP CARDS ------ -->
+
+  <div class="container">
+    <div class="row my-5 align-items-center">
+      <div class="d-none d-md-block col-md-6 col-lg-4 change-hover">
+        <picture class="show-img h-100">
+          <source media="(min-width:992px)" srcset="images/chef_900.jpg" />
+          <source media="(min-width:768px)" srcset="images/chef_600.jpg" />
+          <img class="object-fit-cover w-100" src="images/chef_300.jpg" alt="Chef" />
+        </picture>
+        <picture class="d-none h-100">
+          <source media="(min-width:992px)" srcset="images/chef_2_900.jpg" />
+          <source media="(min-width:768px)" srcset="images/chef_2_600.jpg" />
+          <img class="object-fit-cover w-100" src="images/chef_2_300.jpg" alt="Chef" />
+        </picture>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-8">
+        <h2 class="pb-3" id="o-nama">O nama</h2>
+        <p>
+          Svojom dugogodišnjom tradicijom i iskustvom restoran nudi
+          specijalitete za prave gurmane. Svatko će, ovdje, pronaći nešto za
+          sebe. Uz tradicionalna otočna jela poput creske janjetine, jadranske
+          ribe i rakova, domaćih raviola sa skutom i šparogama, bifteka od
+          boškarina, u restoranu možete kušati raznovrsna jela ispod peke, s
+          otvorenog roštilja na drveni ugljen ili s ražnja te popiti pedesetak
+          vrsta vrhunskih hrvatskih vina.
+        </p>
+      </div>
+    </div>
+    <div class="row row-gutter mt-5 justify-content-around align-items-stretch">
+      <div class="col-sm-12 col-md-6 text-center">
+        <div class="bg-body-tertiary p-5 h-100 rounded-1">
+          <img class="pb-4" src="images/osoblje.png" alt="" />
+          <h3>Profesionalno osoblje</h3>
+          <p>
+            Naš obrazovani kuharski tim redovito prolazi kroz edukacije i
+            usavršavanja. Strastveni smo u pružanju vrhunske usluge, a naše
+            obučeno osoblje ne samo da priprema ukusna jela, već i donosi
+            svježu kreativnost na stol.
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 text-center">
+        <div class="bg-body-tertiary p-5 h-100 rounded-1">
+          <img class="pb-4" src="images/rezervacija.png" alt="" />
+          <h3>Catering</h3>
+          <p>
+            Uživajte u trenucima, a brigu o hrani prepustite nama! Naš
+            restoran nudi vrhunski catering, dostupan kako u našem prostoru,
+            tako i na lokaciji po Vašem izboru – bilo da je riječ o tvrtki,
+            domu ili odabranom prostoru.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-5 mb-5 text-center">
+      <h2 class="pb-3">Zavirite u naše kulinarske čarolije</h2>
+      <video width="100%" autoplay muted loop>
+        <source src="images/ponuda.mp4" type="video/mp4" />
+        Vaš pretraživač ne podržava video sadržaj.
+      </video>
+    </div>
+
+    <div class="row row-gutter my-5 align-items-stretch">
+      <h2 class="text-center pb-3" id="ponuda">
+        Stvorite meni po Vašem ukusu
+      </h2>
+      <div class="col-sm-12 col-md-12 col-lg-4">
+        <div class="card bg-body-tertiary shadow-sm border border-0 h-100">
+          <img src="images/predjela.png" class="card-img-top" alt="" />
+          <div class="card-body">
+            <h4 class="fw-bold">Predjela</h4>
+            <p class="card-text">
+              Od osvježavajućih salata s domaćim dressingom do fine selekcije
+              sireva i delikatesnih pršuta, naša predjela su pažljivo
+              osmišljena kako bi zadovoljila sva nepca i uvela Vas u avanturu
+              koja slijedi.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-4">
+        <div class="card bg-body-tertiary shadow-sm border border-0 h-100">
+          <img src="images/glavna-jela.png" class="card-img-top" alt="" />
+          <div class="card-body">
+            <h4 class="fw-bold">Glavna jela</h4>
+            <p class="card-text">
+              Sa svježim sastojcima, naša glavna jela nude širok spektar okusa
+              - od sočnih mesnih delicija, morskih ribljih specijaliteta ili
+              vegetarijanskih kreacija, svako jelo je pažljivo pripremljeno
+              kako bi pružilo nezaboravno iskustvo.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-4">
+        <div class="card bg-body-tertiary shadow-sm border border-0 h-100">
+          <img src="images/deserti.png" class="card-img-top" alt="" />
+          <div class="card-body">
+            <h4 class="fw-bold">Deserti</h4>
+            <p class="card-text">
+              Za slatki završetak vašeg obroka, naša kolekcija deserata će vas
+              očarati. Od raskošnih čokoladnih poslastica do laganih voćnih
+              iznenađenja, naši deserti su majstorski stvoreni kako bi
+              zadovoljili vašu slatku žudnju.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------ ACCORDION ------ -->
+
+    <div class="row my-5">
+      <h2 class="pb-3">Često postavljena pitanja</h2>
+      <div class="accordion my-2" id="accordionExample">
+        <div class="accordion-item bg-body-tertiary mt-2">
+          <h2 class="accordion-header bg-body-tertiary">
+            <button class="accordion-button bg-body-tertiary py-4" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Kako mogu rezervirati stol u restoranu FIDIT?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Rezervaciju stola možete jednostavno napraviti putem našeg maila
+              ili nas kontaktirati telefonom. Očekujte brzu potvrdu od našeg
+              ljubaznog osoblja.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item bg-body-tertiary mt-2">
+          <h2 class="accordion-header bg-body-tertiary">
+            <button class="accordion-button bg-body-tertiary py-4 collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Imate li opcije za posebne dijetalne potrebe?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Da, ponosimo se pružanjem raznovrsnih opcija koje uključuju
+              vegetarijanske, veganske, bezglutenske i druge dijetalne
+              preferencije. Molimo vas da nas unaprijed obavijestite o
+              posebnim zahtjevima.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item bg-body-tertiary mt-2">
+          <h2 class="accordion-header bg-body-tertiary">
+            <button class="accordion-button bg-body-tertiary py-4 collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Kako funkcionira catering servis?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Naš catering servis pruža personalizirane usluge za različite
+              događaje. Možete nas kontaktirati putem obrasca na web stranici,
+              telefonski ili posjetiti restoran kako bismo prilagodili ponudu
+              prema vašim potrebama.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item bg-body-tertiary mt-2">
+          <h2 class="accordion-header bg-body-tertiary">
+            <button class="accordion-button bg-body-tertiary py-4 collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Koje vrste plaćanja prihvaćate?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Prihvaćamo različite načine plaćanja, uključujući gotovinu,
+              kartice (debitne i kreditne), te online plaćanja. Osiguravamo
+              sigurnost i praktičnost u svim transakcijama.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5 align-items-center">
+      <div class="col-sm-12 col-md-4 col-lg-6">
+        <h2 class="pb-3" id="kontakt">Kontaktirajte nas</h2>
+        <p class="mb-1">Adresa: Restoran FIDIT</p>
+        <p class="mb-1">Ulica Ivana Kumičića 151000 Rijeka</p>
+        <p class="mb-1">Broj telefona: +385 51 525 525</p>
+        <p class="mb-3">E-mail: restoran-fidit@info.hr</p>
+        <p class="mb-1 fw-bold">Radno vrijeme</p>
+        <div class="d-flex gap-5">
+          <div>
+            <p>
+              Pon, Uto, Čet:<br />
+              8:00-17:00
+            </p>
+          </div>
+          <div>
+            <p>
+              Sri, Pet, Sub:<br />
+              10:00-22:00
+            </p>
+          </div>
+        </div>
+        <audio controls>
+          <source src="images/pozdravna_poruka.mp3" type="audio/mpeg" />
+          Vaš pretraživač ne podržava audio element.
+        </audio>
+      </div>
+
+      <div class="col-sm-12 col-md-8 col-lg-6">
+        <!-- ------ MAPS ------  -->
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.995494321443!2d14.46437547735346!3d45.32871344246694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4764a1abebf45ebb%3A0x6c8eecc1fdf357b2!2sFACULTY%20OF%20INFORMATICS%20AND%20DIGITAL%20TECHNOLOGIES!5e0!3m2!1sen!2shr!4v1702558501880!5m2!1sen!2shr"
+          width="100%" height="400" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+  <footer class="text-center mt-5 mb-0 p-2">
+    <p class="mb-0 text-white fs-6">Copyright Restoran FIDIT - 2024</p>
+  </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</html>
